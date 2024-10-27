@@ -32,6 +32,42 @@ export function MainNav() {
       >
         About
       </Link>
+      <Link
+        href="/past-events"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/past-events" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Past Events
+      </Link>
+      <Link
+        href="/upcoming-events"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/upcoming-events" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Upcoming Events
+      </Link>
+      <Link
+        href="/gallery"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/gallery" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Gallery
+      </Link>
+      <Link
+        href="/socials"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/socials" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Socials
+      </Link>
     </nav>
   );
 }

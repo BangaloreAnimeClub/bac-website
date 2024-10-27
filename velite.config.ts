@@ -24,6 +24,38 @@ const posts = defineCollection({
     .transform(computedFields),
 });
 
+const upcomingEventsPosts = defineCollection({
+  name: "Post",
+  pattern: "upcoming-events/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.path(),
+      title: s.string().max(99),
+      description: s.string().max(999).optional(),
+      date: s.isodate(),
+      published: s.boolean().default(true),
+      tags: s.array(s.string()).optional(),
+      body: s.mdx(),
+    })
+    .transform(computedFields),
+});
+
+const pastEventsPosts = defineCollection({
+  name: "Post",
+  pattern: "past-events/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.path(),
+      title: s.string().max(99),
+      description: s.string().max(999).optional(),
+      date: s.isodate(),
+      published: s.boolean().default(true),
+      tags: s.array(s.string()).optional(),
+      body: s.mdx(),
+    })
+    .transform(computedFields),
+});
+
 export default defineConfig({
   root: "content",
   output: {
@@ -33,7 +65,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { posts },
+  collections: { posts, upcomingEventsPosts, pastEventsPosts },
   mdx: {
     rehypePlugins: [
       rehypeSlug,
