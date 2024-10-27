@@ -51,6 +51,15 @@ export function MainNav() {
         Upcoming Events
       </Link>
       <Link
+        href="/gallery"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/gallery" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Gallery
+      </Link>
+      <Link
         href="/socials"
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",

@@ -42,6 +42,9 @@ export function MobileNav() {
           <MobileLink onOpenChange={setOpen} href="/upcoming-events">
             Upcoming Events
           </MobileLink>
+          <MobileLink onOpenChange={setOpen} href="/gallery">
+            Gallery
+          </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/socials">
             Socials
           </MobileLink>
