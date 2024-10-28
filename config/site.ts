@@ -4,12 +4,12 @@ export const siteConfig = {
   description: "Bengaluru Anime Club's official website",
   author: "virajsazzala",
   links: {
-    twitter: "https://www.instagram.com/bangaloreanimeclub/",
+    twitter: "https://x.com/BLRAnimeClub",
     instagram: "https://www.instagram.com/bangaloreanimeclub/",
     discord: "https://discord.com/invite/EumfnhyZvB",
-    github: "https://github.com/virajsazzala/bac",
-    linktree: "https://linktr.ee/bangaloreanimeclub",
-    gmail: "mailto:contact@bac.moe",
+    github: "https://github.com/BangaloreAnimeClub",
+    linktree: "https://bac.moe/socials",
+    gmail: "mailto:support@bac.moe",
   },
 };
 
