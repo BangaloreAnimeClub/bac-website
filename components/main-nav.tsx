@@ -39,7 +39,7 @@ export function MainNav() {
           pathname === "/past-events" ? "text-foreground" : "text-foreground/60"
         )}
       >
-        Past Events
+        Archives
       </Link>
       <Link
         href="/upcoming-events"
@@ -48,7 +48,7 @@ export function MainNav() {
           pathname === "/upcoming-events" ? "text-foreground" : "text-foreground/60"
         )}
       >
-        Upcoming Events
+        Events
       </Link>
       <Link
         href="/gallery"

@@ -37,10 +37,10 @@ export function MobileNav() {
             About
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/past-events">
-            Past Events
+            Archives
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/upcoming-events">
-            Upcoming Events
+            Events
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/gallery">
             Gallery
