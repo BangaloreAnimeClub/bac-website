@@ -68,6 +68,15 @@ export function MainNav() {
       >
         Socials
       </Link>
+      <Link
+        href="/contact-us"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/contact-us" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Contact Us
+      </Link>
     </nav>
   );
 }

@@ -48,16 +48,9 @@ export function MobileNav() {
           <MobileLink onOpenChange={setOpen} href="/socials">
             Socials
           </MobileLink>
-          {/* <Link target="_blank" rel="noreferrer" href={siteConfig.links.github}>
-            GitHub
-          </Link>
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href={siteConfig.links.twitter}
-          >
-            Twitter
-          </Link> */}
+          <MobileLink onOpenChange={setOpen} href="/contact-us">
+            Contact Us
+          </MobileLink>
         </div>
       </SheetContent>
     </Sheet>
