@@ -30,12 +30,7 @@ export default function Home() {
             </Link>
             <Link
               href={siteConfig.links.linktree}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "lg" }),
-                "w-full sm:w-fit"
-              )}
+              className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full sm:w-fit")}
             >
               Socials
             </Link>

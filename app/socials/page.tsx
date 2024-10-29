@@ -2,7 +2,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 import Link from "next/link";
-import { FaSquareInstagram, FaSquareWhatsapp, FaSquareXTwitter, FaDiscord, FaFacebook, FaTelegram } from "react-icons/fa6";
+import { cn, sortPosts } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { FaInstagram, FaWhatsapp, FaXTwitter, FaDiscord, FaFacebook, FaTelegram } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "BAC · Socials",
@@ -10,21 +12,16 @@ export const metadata: Metadata = {
 };
 
 export default async function SocialsPage() {
-  const linkStyle = {
+
+  const buttonStyle = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '10px',
-    border: '2px solid #bbb',
-    borderRadius: '10px',
-    marginBottom: '10px',
+    padding: '7px',
+    border: '0px solid #bbb',
+    borderRadius: '5px',
+    marginBottom: '5px',
     width: '350px',
-  };
-
-  const iconStyle = {
-    marginRight: '10px',
-    width: '30px',
-    height: '30px',
   };
 
   const textStyle = {
@@ -46,57 +43,64 @@ export default async function SocialsPage() {
 
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         
-        <li style={linkStyle}>
-          <a href="https://instagram.com/bangaloreanimeclub/" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
-            <FaSquareInstagram size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Instagram</span>
-          </a>
+        <li style = {buttonStyle}>
+          <Link href="https://instagram.com/bangaloreanimeclub/" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
+            <FaInstagram size = {35}/>&nbsp;&nbsp;<span style={textStyle}>Instagram</span>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://x.com/BLRAnimeClub" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
-            <FaSquareXTwitter size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Twitter</span>
-          </a>
+        <li style = {buttonStyle}>
+          <Link href="https://x.com/BLRAnimeClub" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
+            <FaXTwitter size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Twitter</span>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://whatsapp.com/channel/0029Va4WaK1I1rcnkEFOnV35" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
-            <FaSquareWhatsapp size = {30}/>&nbsp;&nbsp;<span style={textStyle}>WhatsApp (Channel)</span>
-          </a>
+        <li style = {buttonStyle}>
+          <Link href="https://whatsapp.com/channel/0029Va4WaK1I1rcnkEFOnV35" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
+            <FaWhatsapp size = {30}/>&nbsp;&nbsp;<span style={textStyle}>WhatsApp (Channel)</span>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://chat.whatsapp.com/FoLaQKZc7Lq3gdPVkkOIZJ" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
-            <FaSquareWhatsapp size = {30}/>&nbsp;&nbsp;<span style={textStyle}>WhatsApp (Community)</span>
-          </a>
+        <li style = {buttonStyle}>
+          <Link href="https://chat.whatsapp.com/FoLaQKZc7Lq3gdPVkkOIZJ" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
+            <FaWhatsapp size = {30}/>&nbsp;&nbsp;<span style={textStyle}>WhatsApp (Community)</span>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://discord.gg/EumfnhyZvB" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+        <li style = {buttonStyle}>
+          <Link href="https://discord.gg/EumfnhyZvB" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
             <FaDiscord size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Discord</span>
-          </a>
+          </Link>
         </li>
-        
-        <li style={linkStyle}>
-          <a href="https://www.facebook.com/bangaloreanimeclub" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+
+        <li style = {buttonStyle}>
+          <Link href="https://www.facebook.com/bangaloreanimeclub" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
             <FaFacebook size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Facebook (Page)</span>
-          </a>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://facebook.com/groups/BangaloreAnimeClub/" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+        <li style = {buttonStyle}>
+          <Link href="https://facebook.com/groups/BangaloreAnimeClub/" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
             <FaFacebook size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Facebook (Group)</span>
-          </a>
+          </Link>
         </li>
 
-        <li style={linkStyle}>
-          <a href="https://t.me/joinchat/U4PbJ5tLTovcFNnz" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+        <li style = {buttonStyle}>
+          <Link href="https://t.me/joinchat/U4PbJ5tLTovcFNnz" target="_blank"
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "w-full")}>
             <FaTelegram size = {30}/>&nbsp;&nbsp;<span style={textStyle}>Telegram</span>
-          </a>
+          </Link>
         </li>
 
       </ul>
-      
-
+    
     </div>
   </div>
   );
