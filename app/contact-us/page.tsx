@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Contact Us",
 };
 
+
 export default async function ContactUsPage() {
   const linkStyle = {
     display: 'flex',
