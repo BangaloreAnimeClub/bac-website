@@ -12,7 +12,8 @@ export default function Home() {
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-10">
 
         <div style= {{'display': 'flex', 'justifyContent': 'center'}}>
-          <img src="/images/logo-full-2.svg" alt="BAC Logo" style={{ 'width': '50%', 'height': 'auto' }}/>
+          <img src="/images/logo-full-2.svg" alt="BAC Logo" style={{ 'width': '50%', 'height': 'auto' }} className="block dark:hidden"/>
+          <img src="/images/logo-light-full.svg" alt="BAC Logo" style={{ 'width': '50%', 'height': 'auto' }} className="hidden dark:block"/>
         </div>
 
         <div className="container flex flex-col gap-4 text-center">
