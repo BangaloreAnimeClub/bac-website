@@ -9,22 +9,23 @@ export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
   return (
     <>
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-10">
+
+        <div style= {{'display': 'flex', 'justifyContent': 'center'}}>
+          <img src="/images/logo-full-2.svg" alt="BAC Logo" style={{ 'width': '50%', 'height': 'auto' }}/>
+        </div>
+
         <div className="container flex flex-col gap-4 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
-            We are BAC!
-          </h1>
+          
           <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-            <b>•<span style={{ color: '#ea4167' }}> Bengaluru Anime Club</span>&nbsp;•</b>
-            <br/><br/>
             <span style={{ color: '#ea4167' }}>Nyamaskara!</span> Welcome to the anime and manga headquarters of Nyamma Bengaluru. Looking for events, contests, cosplay, fanart, recommendations, or just a space for discourse and connecting with fellow fans? <span style={{ color: '#ea4167' }}>We&#39;ve got you covered.</span>
           </p>
           <div className="flex flex-col gap-4 justify-center sm:flex-row">
             <Link
-              href="/blog"
+              href="/upcoming-events"
               className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-fit")}
             >
-              Blog
+              Events
             </Link>
             <Link
               href={siteConfig.links.linktree}
@@ -40,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container max-w-4xl py-6 lg:py-10 flex flex-col space-y-6 mt-60">
+      <section className="container max-w-4xl py-6 lg:py-10 flex flex-col space-y-6 mt-0">
         <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center">
           Latest Blogs
         </h2>
