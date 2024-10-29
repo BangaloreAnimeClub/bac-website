@@ -17,7 +17,7 @@ export default function Home() {
           <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
             <b>•<span style={{ color: '#ea4167' }}> Bengaluru Anime Club</span>&nbsp;•</b>
             <br/>
-            Join us for events, discussions, and more to enjoy anime together!
+            Nyamaskara! Welcome to the anime and manga headquarters of Nyamma Bengaluru. Looking for events, contests, cosplay, fanart, recommendations, or just a space for discourse and connecting with fellow weebs? We&#39;ve got you covered.
           </p>
           <div className="flex flex-col gap-4 justify-center sm:flex-row">
             <Link
