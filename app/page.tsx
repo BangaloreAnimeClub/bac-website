@@ -15,7 +15,7 @@ export default function Home() {
             We are BAC!
           </h1>
           <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-            • Bengaluru Anime Club •
+            <b>•<span style={{ color: '#ea4167' }}> Bengaluru Anime Club</span>&nbsp;•</b>
             <br/>
             Join us for events, discussions, and more to enjoy anime together!
           </p>
