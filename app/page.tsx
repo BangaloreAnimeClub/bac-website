@@ -33,7 +33,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
+                buttonVariants({ variant: "secondary", size: "lg" }),
                 "w-full sm:w-fit"
               )}
             >
