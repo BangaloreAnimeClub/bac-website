@@ -78,11 +78,26 @@ export default async function AboutPage() {
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-x-4">
           <h1 className="inline-block font-black text-4xl lg:text-5xl">
-            Meet the Team
+            About Us
           </h1>
         </div>
       </div>
-      <hr className="my-8" />
+      <hr className="my-4" />
+      <div className="flex flex-col md:flex-row gap-8 items-center md:items-start pb-10">
+        <p className="text-muted-foreground text-lg py-4">
+        Bengaluru Anime Club is a community of anime enthusiasts based in the city of Bengaluru. Whether you’re a seasoned otaku or new to the world of anime and manga, this club offers a welcoming space to connect with fellow fans, share your love for Japanese animation, and explore diverse genres and series.
+        <br/>
+        <br/>
+        From regular meetups and watch parties to discussions on the latest episodes, cosplaying events, and manga swaps, the Bengaluru Anime Club fosters a sense of belonging among anime fans of all ages. We also host special screenings, anime trivia nights, and cultural events to celebrate the rich art and storytelling of Japan.
+        <br/>
+        <br/>
+        Join us to dive deep into the world of anime, make new friends, and be part of a growing community that shares your passion for all things anime!
+        </p>
+      </div>
+      <h2 className="inline-block font-black text-3xl lg:text-4xl">
+            Meet the Team
+      </h2>
+      <hr className="my-4" />
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-3 gap-3 w-full max-w-[1200px] mx-auto space-y-3 pb-28">
           {profiles.map((profile, index) => (
             <ProfileCard
