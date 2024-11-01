@@ -50,7 +50,7 @@ export function MainNav() {
       >
         Events
       </Link>
-      <Link
+      {/* <Link
         href="/gallery"
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
@@ -58,7 +58,7 @@ export function MainNav() {
         )}
       >
         Gallery
-      </Link>
+      </Link> */}
       <Link
         href="/socials"
         className={cn(
