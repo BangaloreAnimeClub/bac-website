@@ -18,7 +18,7 @@ const profiles = [
   {
       name: "Fak",
       designation: "Meetups",
-      imageSrc: "/images/pfps/futtaim.JPG",
+      imageSrc: "/images/pfps/futtaim.jpg",
       bio: "Yeah you bleed, just to know you’re alive.",
     },
     {

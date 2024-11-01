@@ -12,7 +12,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, designation, imageSrc, 
     return (
         <div className='break-inside-avoid'>
 
-        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-xl shadow dark:bg-[#191919] dark:border-[#EA4168]">
+        <div className="w-full max-w-sm bg-white border rounded-xl shadow dark:bg-[#191919] border-[#EA4168]">
             <div className="flex flex-col items-center pb-8 pt-8">
                 <img className="w-[140px] h-[140px] mb-3 rounded-full shadow-lg" src={imageSrc} alt={`${name} image`} />
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{name}</h5>
